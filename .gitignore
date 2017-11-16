@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+todos/node_modules
+counter/node_modules
 
 # testing
 /coverage
