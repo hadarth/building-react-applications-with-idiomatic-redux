@@ -7,5 +7,5 @@ const store = configureStore()
 
 ReactDOM.render(
   <Root store={store} />,
-  document.getElementById('app')
+  document.getElementById('root')
 );
