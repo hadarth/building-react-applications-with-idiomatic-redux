@@ -36,3 +36,21 @@ const todos = (state = [], action) => {
 };
 
 export default todos;
+
+
+// SELECTORS - they select something from the current state
+
+// this is a named export (as opposed to the default export which will be exported
+// if we dont specify curly braces)
+export const getVisibleTodos = (state, filter) => {
+  switch (filter) {
+    case 'all':
+      return state;
+    case 'completed':
+      return state.filter(t => t.completed);
+    case 'active':
+      return state.filter(t => !t.completed);
+    default:
+      throw new Error(`Unknown filter: ${filter}.`);
+  }
+};
