@@ -1,21 +1,8 @@
 {
-  "env": {
-    "browser": true,
-    "node": true
-  },
-  "plugins": ["react"],
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": "airbnb",
   "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": true,
       "experimentalObjectRestSpread": true
-    }
+    },
   },
-  "rules": {
-    "semi": 2,
-    "no-console": 0,
-    "react/prop-types": 0
-  }
 }
